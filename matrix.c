@@ -51,13 +51,14 @@ void setup(int m_1[10][10], int m_2[10][10]) {
     }
     int m_r[10][10] = {0};
     printf("\t\tMATRIX RESULT\n");
-    for(int i = 0; i < row; i++){
-        for(int j = 0; j < co; j++){
-            for(int k = 0; k < col; k++){
-                m_r[i][k] += m_1[i][j]*m_2[j][k];
-            }
+for(int i = 0; i < row; i++) {
+    for(int j = 0; j < co; j++) {
+        for(int k = 0; k < col; k++) {
+            m_r[i][j] += m_1[i][k] * m_2[k][j];
         }
     }
+}
+
 
     for(int i = 0; i < row; i++){
         for(int j = 0; j < co; j++){
